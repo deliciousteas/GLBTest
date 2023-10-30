@@ -39,63 +39,6 @@ int main()
 	
 	
 	
-	//IfcSchema::IfcDuctSegment::list::ptr ductsegment = file.instances_by_type<IfcSchema::IfcDuctSegment>();
-	//for (IfcSchema::IfcDuctSegment::list::it it = ductsegment->begin(); it != ductsegment->end(); ++it)
-	//{
-	//	const IfcSchema::IfcDuctSegment* master = *it;
-	//	//std::vector<std::string>propertyVector;
-	//	outputFile << master->data().toString() << std::endl;
-
-	//	//ifcproertySet定义了所有extensible 属性，统一读取最后面的内容就可以了。
-	//	::Ifc4::IfcRelDefinesByProperties::list::ptr RelProperty = master->IsDefinedBy();
-	//	::Ifc4::IfcRelDefinesByType::list::ptr RelType = master->IsTypedBy();
-	//	::Ifc4::IfcRelDefinesByObject::list::ptr RelObject = master->Declares();
-	//	
-	//	for (auto property : *RelProperty)
-	//	{
-	//		
-	//		std::string content = property->RelatingPropertyDefinition()->data().toString();
-	//		outputFile << property->RelatingPropertyDefinition()->data().toString() << std::endl;
-	//		
-	//	}
-	//	}
-	// 
-	//IfcSchema::IfcShapeRepresentation::list::ptr tessellation = file.instances_by_type<IfcSchema::IfcShapeRepresentation>();
-	//{
-	//	for (IfcSchema::IfcShapeRepresentation::list::it it = tessellation->begin(); it != tessellation->end(); ++it)
-	//	{
-	//		const IfcSchema::IfcShapeRepresentation* master = *it;
-	//		std::regex pattern(R"(^#(\d+)=\b)");
-	//		std::smatch matches;
-	//		std::string data_str = master->data().toString();
-	//		if (std::regex_search(data_str, matches, pattern))
-	//		{
-	//			
-	//			if (matches[1] == "180805")
-	//			{
-	//					查找句首的#[0-9]+用正则表达比较好。
-	//				//todo获取到反属性。ifcreprentation来访问
-	//				std::cout << "找到了：！！" << data_str << std::endl;
-	//				::Ifc4::IfcRepresentationMap::list::ptr map = master->RepresentationMap();
-	//				for (auto test : *map)
-	//				{
-	//					std::cout << test->data().toString() << std::endl;
-	//				}
-	//				/*std::cout << master->LayerAssignments();
-	//				std::cout << master->RepresentationMap();
-	//				std::cout << master->OfProductRepresentation();*/
-	//				::Ifc4::IfcShapeAspect::list::ptr shape = master->OfShapeAspect();
-
-	//				for (auto test : *shape)
-	//				{
-	//					std::cout << test->data().toString() << std::endl;
-	//				}
-	//				
-	//			}		
-	//		}
-	//	}
-	//}
-
 	
 	
 	//记录所有terminal _info
